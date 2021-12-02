@@ -1,6 +1,6 @@
 {
-  "name": "html2pdf-js",
-  "version": "0.0.1",
+  "name": "@chantouchsek/html2pdf-js",
+  "version": "0.0.0",
   "description": "Client-side HTML-to-PDF rendering using pure JS",
   "main": "dist/html2pdf-js",
   "files": [
@@ -72,5 +72,8 @@
     "test:run": "npx karma start karma.conf.js",
     "publish-gh": "node ./build-scripts.js publish-gh",
     "release": "standard-version && git push --follow-tags origin main && yarn publish"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
