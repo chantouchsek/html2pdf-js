@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/chantouchsek/html2pdf-js/compare/v0.0.1...v0.0.2) (2021-12-02)
+
+
+### Bug Fixes
+
+* :pencil: fixed build prod ([5f7fad7](https://github.com/chantouchsek/html2pdf-js/commit/5f7fad7e80f78d1c0e373a79969373143d0cb2d5))
+
 ### 0.0.1 (2021-12-02)
 
 
