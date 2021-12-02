@@ -2,7 +2,7 @@
   "name": "@chantouchsek/html2pdf-js",
   "version": "0.0.1",
   "description": "Client-side HTML-to-PDF rendering using pure JS",
-  "main": "dist/html2pdf-js",
+  "main": "dist/html2pdf.js",
   "files": [
     "/src",
     "/dist"
