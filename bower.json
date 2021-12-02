@@ -24,5 +24,6 @@
     "bower_components/",
     ".archive/",
     ".devel/"
-  ]
+  ],
+  "version": "0.0.1"
 }
