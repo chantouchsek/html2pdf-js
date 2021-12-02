@@ -301,4 +301,4 @@ If you want to create a new feature or bugfix, please feel free to fork and subm
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2017-2019 Erik Koopmans <[https://chantouch.me/](https://chantouch.me/)>
+Copyright (c) 2021 Chantouch Sek <[https://chantouch.me/](https://chantouch.me/)>
