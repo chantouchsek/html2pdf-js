@@ -35,7 +35,7 @@ html2pdf.js converts any webpage or element into a printable PDF entirely client
 
 #### CDN
 
-The simplest way to use html2pdf-js is to include it as a script in your HTML by using cdnjs:
+The simplest way to use @chantouchsek/html2pdf-js is to include it as a script in your HTML by using cdnjs:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf-js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -55,17 +55,17 @@ Using a CDN URL will lock you to a specific version, which should ensure stabili
 
 #### NPM
 
-Install html2pdf-js and its dependencies using NPM with `npm install --save html2pdf-js` (make sure to include `.js` in the package name).
+Install html2pdf-js and its dependencies using NPM with `npm install --save @chantouchsek/html2pdf-js` (make sure to include `.js` in the package name).
 
-*Note: You can use NPM to create your project, but html2pdf-js **will not run in Node.js**, it must be run in a browser.*
+*Note: You can use NPM to create your project, but @chantouchsek/html2pdf-js **will not run in Node.js**, it must be run in a browser.*
 
 #### Bower
 
-Install html2pdf-js and its dependencies using Bower with `bower install --save html2pdf-js` (make sure to include `.js` in the package name).
+Install @chantouchsek/html2pdf-js and its dependencies using Bower with `bower install --save @chantouchsek/html2pdf-js` (make sure to include `.js` in the package name).
 
 #### Console
 
-If you're on a webpage that you can't modify directly and wish to use html2pdf-js to capture a screenshot, you can follow these steps:
+If you're on a webpage that you can't modify directly and wish to use @chantouchsek/html2pdf-js to capture a screenshot, you can follow these steps:
 
 1. Open your browser's console (instructions for different browsers [here](https://webmasters.stackexchange.com/a/77337/94367)).
 2. Paste in this code:
@@ -76,13 +76,13 @@ If you're on a webpage that you can't modify directly and wish to use html2pdf-j
         script.src = url;
         document.head.appendChild(script);
     }
-    addScript('https://cdnjs.cloudflare.com/ajax/libs/html2pdf-js/0.10.1/html2pdf.bundle.min.js');
+    addScript('https://cdnjs.cloudflare.com/ajax/libs/@chantouchsek/html2pdf-js/0.10.1/html2pdf.bundle.min.js');
     ```
-3. You may now execute html2pdf-js commands directly from the console. To capture a default PDF of the entire page, use `html2pdf(document.body)`.
+3. You may now execute @chantouchsek/html2pdf-js commands directly from the console. To capture a default PDF of the entire page, use `html2pdf(document.body)`.
 
 ## Usage
 
-Once installed, html2pdf-js is ready to use. The following command will generate a PDF of `#element-to-print` and prompt the user to save the result:
+Once installed, @chantouchsek/html2pdf-js is ready to use. The following command will generate a PDF of `#element-to-print` and prompt the user to save the result:
 
 ```js
 var element = document.getElementById('element-to-print');
@@ -91,7 +91,7 @@ html2pdf(element);
 
 ### Advanced usage
 
-Every step of html2pdf-js is configurable, using its new Promise-based API. If html2pdf-js is called without arguments, it will return a `Worker` object:
+Every step of @chantouchsek/html2pdf-js is configurable, using its new Promise-based API. If @chantouchsek/html2pdf-js is called without arguments, it will return a `Worker` object:
 
 ```js
 var worker = html2pdf();  // Or:  var worker = new html2pdf.Worker;
@@ -106,7 +106,7 @@ var worker = html2pdf().from(element).save();
 
 #### Workflow
 
-The basic workflow of html2pdf-js tasks (enforced by the prereq system) is:
+The basic workflow of @chantouchsek/html2pdf-js tasks (enforced by the prereq system) is:
 
 ```
 .from() -> .toContainer() -> .toCanvas() -> .toImg() -> .toPdf() -> .save()
@@ -141,7 +141,7 @@ A few aliases are also provided for convenience:
 
 ## Options
 
-html2pdf-js can be configured using an optional `opt` parameter:
+@chantouchsek/html2pdf-js can be configured using an optional `opt` parameter:
 
 ```js
 var element = document.getElementById('element-to-print');
@@ -174,9 +174,9 @@ The `opt` parameter has the following optional fields:
 
 ### Page-breaks
 
-html2pdf-js has the ability to automatically add page-breaks to clean up your document. Page-breaks can be added by CSS styles, set on individual elements using selectors, or avoided from breaking inside all elements (`avoid-all` mode).
+@chantouchsek/html2pdf-js has the ability to automatically add page-breaks to clean up your document. Page-breaks can be added by CSS styles, set on individual elements using selectors, or avoided from breaking inside all elements (`avoid-all` mode).
 
-By default, html2pdf-js will respect most CSS [`break-before`](https://developer.mozilla.org/en-US/docs/Web/CSS/break-before), [`break-after`](https://developer.mozilla.org/en-US/docs/Web/CSS/break-after), and [`break-inside`](https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside) rules, and also add page-breaks after any element with class `html2pdf__page-break` (for legacy purposes).
+By default, @chantouchsek/html2pdf-js will respect most CSS [`break-before`](https://developer.mozilla.org/en-US/docs/Web/CSS/break-before), [`break-after`](https://developer.mozilla.org/en-US/docs/Web/CSS/break-after), and [`break-inside`](https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside) rules, and also add page-breaks after any element with class `html2pdf__page-break` (for legacy purposes).
 
 #### Page-break settings
 
@@ -231,7 +231,7 @@ The Worker object returned by `html2pdf()` has a built-in progress-tracking mech
 
 ## Dependencies
 
-html2pdf-js depends on the external packages [html2canvas](https://github.com/niklasvh/html2canvas), [jsPDF](https://github.com/MrRio/jsPDF), and [es6-promise](https://github.com/stefanpenner/es6-promise). These dependencies are automatically loaded when using NPM or the bundled package.
+@chantouchsek/html2pdf-js depends on the external packages [html2canvas](https://github.com/niklasvh/html2canvas), [jsPDF](https://github.com/MrRio/jsPDF), and [es6-promise](https://github.com/stefanpenner/es6-promise). These dependencies are automatically loaded when using NPM or the bundled package.
 
 If using the unbundled `dist/html2pdf.min.js` (or its un-minified version), you must also include each dependency. Order is important, otherwise html2canvas will be overridden by jsPDF's own internal implementation:
 
@@ -246,40 +246,40 @@ If using the unbundled `dist/html2pdf.min.js` (or its un-minified version), you 
 
 ### Issues
 
-When submitting an issue, please provide reproducible code that highlights the issue, preferably by creating a fork of [this template jsFiddle](https://jsfiddle.net/u6o6ne41/) (which has html2pdf-js already loaded). Remember that html2pdf-js uses [html2canvas](https://github.com/niklasvh/html2canvas) and [jsPDF](https://github.com/MrRio/jsPDF) as dependencies, so it's a good idea to check each of those repositories' issue trackers to see if your problem has already been addressed.
+When submitting an issue, please provide reproducible code that highlights the issue, preferably by creating a fork of [this template jsFiddle](https://jsfiddle.net/u6o6ne41/) (which has @chantouchsek/html2pdf-js already loaded). Remember that @chantouchsek/html2pdf-js uses [html2canvas](https://github.com/niklasvh/html2canvas) and [jsPDF](https://github.com/MrRio/jsPDF) as dependencies, so it's a good idea to check each of those repositories' issue trackers to see if your problem has already been addressed.
 
 #### Known issues
 
 1. **Rendering:** The rendering engine html2canvas isn't perfect (though it's pretty good!). If html2canvas isn't rendering your content correctly, I can't fix it.
     - You can test this with something like [this fiddle](https://jsfiddle.net/chantouchsek/z1rupL4c/), to see if there's a problem in the canvas creation itself.
 
-2. **Node cloning (CSS etc):** The way html2pdf-js clones your content before sending to html2canvas is buggy. A fix is currently being developed - try out:
-    - direct file: Go to [html2pdf-js/bugfix/clone-nodes-BUILD](/chantouchsek/html2pdf-js/tree/bugfix/clone-nodes-BUILD) and replace the files in your project with the relevant files (e.g. `dist/html2pdf.bundle.js`)
-    - npm: `npm install chantouchsek/html2pdf-js#bugfix/clone-nodes-BUILD`
-    - Related project: [Bugfix: Cloned nodes](https://github.com/chantouchsek/html2pdf-js/projects/9)
+2. **Node cloning (CSS etc):** The way @chantouchsek/html2pdf-js clones your content before sending to html2canvas is buggy. A fix is currently being developed - try out:
+    - direct file: Go to [@chantouchsek/html2pdf-js/bugfix/clone-nodes-BUILD](/chantouchsek/@chantouchsek/html2pdf-js/tree/bugfix/clone-nodes-BUILD) and replace the files in your project with the relevant files (e.g. `dist/html2pdf.bundle.js`)
+    - npm: `npm install chantouchsek/@chantouchsek/html2pdf-js#bugfix/clone-nodes-BUILD`
+    - Related project: [Bugfix: Cloned nodes](https://github.com/chantouchsek/@chantouchsek/html2pdf-js/projects/9)
 
-3. **Resizing:** Currently, html2pdf-js resizes the root element to fit onto a PDF page (causing internal content to "reflow").
+3. **Resizing:** Currently, @chantouchsek/html2pdf-js resizes the root element to fit onto a PDF page (causing internal content to "reflow").
     - This is often desired behaviour, but not always.
     - There are plans to add alternate behaviour (e.g. "shrink-to-page"), but nothing that's ready to test yet.
-    - Related project: [Feature: Single-page PDFs](https://github.com/chantouchsek/html2pdf-js/projects/1)
+    - Related project: [Feature: Single-page PDFs](https://github.com/chantouchsek/@chantouchsek/html2pdf-js/projects/1)
 
-4. **Rendered as image:** html2pdf-js renders all content into an image, then places that image into a PDF.
+4. **Rendered as image:** @chantouchsek/html2pdf-js renders all content into an image, then places that image into a PDF.
     - This means text is *not selectable or searchable*, and causes large file sizes.
     - This is currently unavoidable, however recent improvements in jsPDF mean that it may soon be possible to render straight into vector graphics.
-    - Related project: [Feature: New renderer](https://github.com/chantouchsek/html2pdf-js/projects/4)
+    - Related project: [Feature: New renderer](https://github.com/chantouchsek/@chantouchsek/html2pdf-js/projects/4)
 
-5. **Promise clashes:** html2pdf-js relies on specific Promise behaviour, and can fail when used with custom Promise libraries.
-    - In the next release, Promises will be sandboxed in html2pdf-js to remove this issue.
-    - Related project: [Bugfix: Sandboxed promises](https://github.com/chantouchsek/html2pdf-js/projects/11)
+5. **Promise clashes:** @chantouchsek/html2pdf-js relies on specific Promise behaviour, and can fail when used with custom Promise libraries.
+    - In the next release, Promises will be sandboxed in @chantouchsek/html2pdf-js to remove this issue.
+    - Related project: [Bugfix: Sandboxed promises](https://github.com/chantouchsek/@chantouchsek/html2pdf-js/projects/11)
 
 6. **Maximum size:** HTML5 canvases have a [maximum height/width](https://stackoverflow.com/a/11585939/4080966). Anything larger will fail to render.
-    - This is a limitation of HTML5 itself, and results in large PDFs rendering completely blank in html2pdf-js.
+    - This is a limitation of HTML5 itself, and results in large PDFs rendering completely blank in @chantouchsek/html2pdf-js.
     - The jsPDF canvas renderer (mentioned in Known Issue #4) may be able to fix this issue!
-    - Related project: [Bugfix: Maximum canvas size](https://github.com/chantouchsek/html2pdf-js/projects/5)
+    - Related project: [Bugfix: Maximum canvas size](https://github.com/chantouchsek/@chantouchsek/html2pdf-js/projects/5)
 
 ### Tests
 
-html2pdf-js is currently sorely lacking in unit tests. Any contributions or suggestions of automated (or manual) tests are welcome. This is high on the to-do list for this project.
+@chantouchsek/html2pdf-js is currently sorely lacking in unit tests. Any contributions or suggestions of automated (or manual) tests are welcome. This is high on the to-do list for this project.
 
 ### Pull requests
 
