@@ -13,6 +13,23 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
+* :fire: fix bug ([3c7a9ea](https://github.com/chantouchsek/html2pdf-js/commit/3c7a9ea2dd354e5145284f60ab730facd02b774f))
+* :fire: ignore .idea ([21183bf](https://github.com/chantouchsek/html2pdf-js/commit/21183bfa283ff60814d602d58c96348e2a0da04c))
+* fix package ([170656c](https://github.com/chantouchsek/html2pdf-js/commit/170656c851065ad48a40514ac6c0523cdc7e9119))
+* fix package ([474a076](https://github.com/chantouchsek/html2pdf-js/commit/474a0762b3b7ea7bb0596d5c158b1051200f8b38))
+* fix readme ([ae4548c](https://github.com/chantouchsek/html2pdf-js/commit/ae4548cdc272c788cde17848c7b2177f2cd1484f))
+
+### 0.0.1 (2021-12-02)
+
+
+### Features
+
+* :zap: forked and add support vuetify.js ([ecffce7](https://github.com/chantouchsek/html2pdf-js/commit/ecffce77ddb04c32b2dec4e376e47537f9dc6050))
+* add standard version ([0841079](https://github.com/chantouchsek/html2pdf-js/commit/08410797307db9d82ce7645c72433c6d23d87876))
+
+
+### Bug Fixes
+
 * :fire: ignore .idea ([21183bf](https://github.com/chantouchsek/html2pdf-js/commit/21183bfa283ff60814d602d58c96348e2a0da04c))
 * fix package ([170656c](https://github.com/chantouchsek/html2pdf-js/commit/170656c851065ad48a40514ac6c0523cdc7e9119))
 * fix package ([474a076](https://github.com/chantouchsek/html2pdf-js/commit/474a0762b3b7ea7bb0596d5c158b1051200f8b38))
