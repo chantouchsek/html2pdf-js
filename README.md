@@ -287,12 +287,11 @@ If you want to create a new feature or bugfix, please feel free to fork and subm
 
 ## Credits
 
-[Erik Koopmans](https://github.com/chantouchsek)
+[Chantouch Sek](https://github.com/chantouchsek)
 
 #### Contributors
 
-- [@WilcoBreedt](https://github.com/WilcoBreedt)
-- [@Ranger1230](https://github.com/Ranger1230)
+- [@ChantouchSek](https://github.com/chantouchsek)
 
 #### Special thanks
 
