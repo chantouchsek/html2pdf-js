@@ -2,3 +2,4 @@ node_modules/
 .archive/
 .devel/
 .idea
+.dist

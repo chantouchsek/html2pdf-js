@@ -5,7 +5,7 @@ const pkg = require('./package.json');
 
 const externals = [ 'jspdf', 'html2canvas' ];
 const banner = `${pkg.name} v${pkg.version}
-Copyright (c) ${(new Date).getFullYear()} Erik Koopmans
+Copyright (c) ${(new Date).getFullYear()} Chantouch Sek
 Released under the ${pkg.license} License.`;
 
 module.exports = env => {
